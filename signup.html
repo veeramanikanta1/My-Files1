@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signup</title>
+<style>
+    body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #4372ca, #2ed931);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        background: #fff;
+        width: 360px;
+        padding: 35px;
+        border-radius: 20px;
+        box-shadow: 0px 10px 20px rgba(9, 9, 9, 0.2);
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 15px;
+        font-size: 26px;
+        color: #111;
+    }
+
+    .input-box {
+        width: 92%;
+        margin-bottom: 15px;
+        position: relative;
+    }
+
+    .input-box input {
+        width: 100%;
+        padding: 12px;
+        border-radius: 10px;
+        border: 1px solid #868181;
+        font-size: 15px;
+        outline: none;
+        transition: 0.3s;
+    }
+
+    .input-box input:focus {
+        border-color: #1e3c72;
+        box-shadow: 0 0 5px rgba(30,60,114,0.4);
+        width: 100%;
+    }
+
+    .eye-icon {
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 18px;
+        color: #666;
+    }
+
+    .forgot {
+        text-align: right;
+        font-size: 13px;
+        margin-top: -10px;
+        margin-bottom: 15px;
+    }
+
+    .forgot a {
+        text-decoration: none;
+        color: #1e3c72;
+    }
+
+    .btn-login {
+        width: 100%;
+        padding: 12px;
+        background: #1e3c72;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 5px;
+        transition: 0.3s;
+    }
+
+    .btn-login:hover {
+        background: #16325c;
+    }
+
+    .signup-text {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    .signup-text a {
+        color: #1e3c72;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .or {
+        margin: 15px 0;
+        font-size: 14px;
+        color: #555;
+    }
+
+    .btn-facebook, .btn-google {
+        width: 100%;
+        padding: 12px;
+        border-radius: 10px;
+        border: none;
+        font-size: 15px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 8px;
+    }
+
+    .btn-facebook {
+        background: #1877f2;
+        color: white;
+    }
+
+    .btn-google {
+        background: #fff;
+        border: 1px solid #ccc;
+        color: #0f0f0f;
+    }
+
+    .btn-facebook img, .btn-google img {
+        width: 20px;
+        height: 20px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Signup</h2>
+
+    <div class="input-box">
+        <input type="email" placeholder="Email">
+    </div>
+
+    <div class="input-box">
+        <input type="Create password" id="password" placeholder="Create Password">
+        <span class="eye-icon">👁️</span>
+    </div>
+    <div class="input-box">
+        <input type="Confirm password" id="password" placeholder="Confirm Password">
+        <span class="eye-icon">👁️</span>
+    </div>
+
+    <button class="btn-login">Signup</button>
+
+    <div class="signup-text">
+        Already have an account? <a href="Login Page.html">Login</a>
+    </div>
+
+    <div class="or">Or</div>
+
+    <button class="btn-facebook">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
+        <a href="https://www.facebook.com"></a>
+        Login with Facebook
+    </button>
+
+    <button class="btn-google">
+        <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png">
+        <a href="https://www.google.com"></a>
+        Login with Google
+    </button>
+</div>
+</body>
+</html>
